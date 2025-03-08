@@ -23,7 +23,6 @@ Route::middleware(['auth'])->group(function () {
 
 
 Route::get('/auth/redirect', [AuthController::class, 'redirect'])->name('auth.redirect');
-
 Route::get('/auth/callback', [AuthController::class, 'callback'])->name('auth.callback');
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';
